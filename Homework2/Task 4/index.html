@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = prompt('Введите число: ');
+        let firstDigit;
+        let secondDigit;
+        let thirdDigit;
+        if (number / 100 > 0 && number / 100 < 10) {
+            firstDigit = Math.floor(number / 100);
+            secondDigit = Math.floor((number % 100) / 10);
+        } else if (number / 100 == 0) {
+            firstDigit = 0;
+            secondDigit = number % 100;
+        } else {
+            firstDigit = Math.floor((number / 100) % 10);
+            secondDigit = Math.floor((number / 10) % 10);
+        }
+        thirdDigit = number % 10;
+        console.log(`В числе ${number} количество сотен: ${firstDigit}, десятков: ${secondDigit}, единиц: ${thirdDigit}`);
+    </script>
+</body>
+</html>

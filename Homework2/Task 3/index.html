@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day = prompt('Введите число от 1 до 31: ');
+        if(day > 0 && day < 11) {
+            console.log('Ваш день в первой декаде месяца');
+        } else if ( day > 10 && day < 21) {
+            console.log('Ваш день во второй декаде месяца');
+        } else if (day > 20 && day < 32) {
+            console.log('Ваш день в третьей декаде месяца');
+        } else {
+            console.log('Такых чисел в месяце не бывает, попробуйте ввести другое число');
+        }
+    </script>
+    
+</body>
+</html>
